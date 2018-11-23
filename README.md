@@ -10,7 +10,7 @@ Python 3
 
 # Download dataset
 
-Download animeface-character-dataset and put in the same folder.
+Download animeface-character-dataset (14490 images) and put in the same folder.
 
 http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/README.html
 
