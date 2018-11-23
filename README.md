@@ -21,7 +21,12 @@ http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/README.html
 # Demo
 
 Itteration 0
+
 ![Itteration 0](https://github.com/abars/AnimeFaceGenerator/blob/master/demo/dcgan_0.png "Itteration 0")
+
+Itteration 2500
+
+![Itteration 2500](https://github.com/abars/AnimeFaceGenerator/blob/master/demo/dcgan_2500.png "Itteration 2500")
 
 # Acknowledgement
 
