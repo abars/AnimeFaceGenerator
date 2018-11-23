@@ -18,6 +18,11 @@ http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/README.html
 
 `python3 dcgan.py`
 
+# Demo
+
+Itteration 0
+![Itteration 0](https://github.com/abars/AnimeFaceGenerator/demo/dcgan_0.png "Itteration 0")
+
 # Acknowledgement
 
 https://github.com/eriklindernoren/Keras-GAN
