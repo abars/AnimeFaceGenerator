@@ -108,12 +108,12 @@ class DCGAN():
 
     def train(self, epochs, batch_size=128, save_interval=50):
 
-        # Load the dataset
+        # Load dataset from mnist
         #(X_train, _), (_, _) = mnist.load_data()
         #X_train = np.expand_dims(X_train, axis=3)
         #print(X_train.shape)
 
-        # Load the dataset from images
+        # Load dataset from images
         train_datagen = ImageDataGenerator(
            rescale=1.0,
            shear_range=0,
@@ -140,15 +140,12 @@ class DCGAN():
 
         while batch_index <= train_generator.batch_index:
             data = train_generator.next()
-            #if(self.channels==1):
-            #    data_list.append(data[0].reshape(self.img_rows, self.img_cols))
-            #else:
             data_list.append(data[0].reshape(self.img_rows, self.img_cols,self.channels))
             batch_index = batch_index + 1
 
         X_train = np.asarray(data_list)
 
-        print(X_train.shape)
+        #print(X_train.shape)
 
         # Rescale -1 to 1
         X_train = X_train / 127.5 - 1.
@@ -202,7 +199,10 @@ class DCGAN():
         cnt = 0
         for i in range(r):
             for j in range(c):
-                axs[i,j].imshow(gen_imgs[cnt, :,:,0], cmap='gray')
+                if(self.channels==1):
+                    axs[i,j].imshow(gen_imgs[cnt, :,:,0], cmap='gray')
+                else:
+                    axs[i,j].imshow(gen_imgs[cnt, :,:,0])
                 axs[i,j].axis('off')
                 cnt += 1
         fig.savefig("images/"+self.output+"_%d.png" % epoch)
