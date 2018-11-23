@@ -1,3 +1,5 @@
+#Generate anime face using DCGAN
+
 from __future__ import print_function, division
 
 from keras.datasets import mnist
@@ -202,7 +204,7 @@ class DCGAN():
                 if(self.channels==1):
                     axs[i,j].imshow(gen_imgs[cnt, :,:,0], cmap='gray')
                 else:
-                    axs[i,j].imshow(gen_imgs[cnt, :,:,0])
+                    axs[i,j].imshow(gen_imgs[cnt, :,:,:])
                 axs[i,j].axis('off')
                 cnt += 1
         fig.savefig("images/"+self.output+"_%d.png" % epoch)
