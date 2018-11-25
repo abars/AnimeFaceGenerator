@@ -44,6 +44,14 @@ Iteration 39950
 
 ![Iteration 39950](https://github.com/abars/AnimeFaceGenerator/blob/master/demo/dcgan_39950.png "Iteration 39950")
 
+Iteration 100000
+
+![Iteration 100000](https://github.com/abars/AnimeFaceGenerator/blob/master/demo/dcgan_100000.png "Iteration 100000")
+
+Iteration 399000
+
+![Iteration 399000](https://github.com/abars/AnimeFaceGenerator/blob/master/demo/dcgan_399000.png "Iteration 399000")
+
 # Acknowledgement
 
 https://github.com/eriklindernoren/Keras-GAN
